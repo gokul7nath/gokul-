@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+body{
+    background-color:#a8dadc ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+.container{
+    position:relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color:#ffffff ;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px ;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+}
+.profile .profilepic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .profilepic img{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile h2{
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.contact{
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact ul li a{
+    text-decoration: none;
+}
+.contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #457b9d;
+}
+.contact ul li .pno{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+}
+.edu{
+    padding-left: 15px;
+    margin-top: 40px; 
+    text-transform: capitalize;  
+}
+.edu li{
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    list-style: none;
+    line-height: 1.4em;
+    font-size: 18px;
+}
+
+.edu h5{
+    color:#457b9d;
+    font-weight: 900 ;
+}
+.edu h4{
+    color: #ffffff;
+    font-weight: 500;
+}
+.lang{
+    margin-top: 40px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.lang li{
+    list-style: none;
+    color: #ffffff;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+.title{
+   color: #ffffff; 
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing:1px ;
+   margin-bottom: 10px;
+}
+.container .containerleft{
+    position: relative;
+    background-color:#1d3557 ;
+}
+.containerright{
+    position: relative;
+    background-color:#fcfcfd ;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 40px;
+}
+.des{
+    color:#000000 ;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.about p{
+    color: #000000;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.skills{
+    margin-bottom: 40px;
+}
+.sk{
+    color:#000000 ;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.skills ul{
+    list-style: none;
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+}
+.skills li{
+    margin-top: 20px;
+}
+.skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #457b9d;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.skills .percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:#ffbe0b ;
+}
+.int{
+    margin-bottom: 40px;
+}
+.int h2{
+    color: #000000;
+}
+.int ul{
+    list-style: none;
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+}
+.int li{
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1.5em;
+}
+.int li .icons{
+    display: inline-block;
+    width: 25px;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.4em;
+} 
+.intern{
+    margin-bottom: 40px;
+}
+.intern p{
+    color: #000000;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+@media (max-width:1000px)
+{
+    .container{
+        margin: 50px;
+        grid-template-columns: revert;
+    }
+}
+
